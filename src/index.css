@@ -7,9 +7,7 @@
 @theme {
   --font-sans: var(--font-sans);
   --dark-mode: class;
-  --color-brand-pink: #ff00ff;
-  --color-brand-purple: #a855f7;
-  --color-brand-teal: #2dd4bf;
+  --color-accent: #3b82f6;
   --color-dark-bg: #0a0c14;
   --color-card-bg: #111421;
 }
@@ -20,7 +18,7 @@
 }
 
 body {
-  @apply bg-white text-slate-900 dark:bg-dark-bg dark:text-slate-100 transition-colors duration-300;
+  @apply bg-white text-white dark:bg-dark-bg dark:text-white transition-colors duration-300;
 }
 
 .dark body {

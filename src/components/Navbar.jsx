@@ -36,9 +36,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <a href="#hero" className="text-xl font-black flex items-center gap-1">
-              <span className="text-brand-pink">Rashmi</span>
-              <span className="text-blue-500">R</span>
-              <span className="text-blue-500">Shetty</span>
+              <span className="text-white">Rashmi</span>
+              <span className="text-white">R</span>
+              <span className="text-white">Shetty</span>
             </a>
           </div>
           
@@ -48,7 +48,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-[11px] font-bold tracking-[0.2em] text-slate-400 hover:text-white transition-colors"
+                  className="text-[11px] font-bold tracking-[0.2em] text-white/70 hover:text-accent transition-colors"
                 >
                   {link.name}
                 </a>
@@ -57,18 +57,18 @@ const Navbar = () => {
               <div className="flex items-center gap-4 ml-4">
                 <a
                   href="#contact"
-                  className="px-6 py-2 bg-brand-pink text-white rounded-full text-[11px] font-black tracking-wider shadow-[0_0_20px_rgba(255,0,255,0.4)] hover:shadow-[0_0_30px_rgba(255,0,255,0.6)] hover:bg-[#ff1aff] transition-all active:scale-95"
+                  className="px-6 py-2 bg-accent text-white rounded-full text-[11px] font-black tracking-wider shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all active:scale-95"
                 >
                   Hire Me
                 </a>
                 <div className="flex items-center gap-3 ml-2">
-                  <a href="mailto:rashmishettykukkuje@gmail.com" className="text-slate-400 hover:text-white transition-colors">
+                  <a href="mailto:rashmishettykukkuje@gmail.com" className="text-white/70 hover:text-accent transition-colors">
                     <Mail size={18} strokeWidth={2.5} />
                   </a>
-                  <a href="https://www.linkedin.com/in/rashmi-r-shetty" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/in/rashmi-r-shetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
                     <Linkedin size={18} strokeWidth={2.5} />
                   </a>
-                  <a href="https://github.com/RashmiRShetty" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors">
+                  <a href="https://github.com/RashmiRShetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
                     <Github size={18} strokeWidth={2.5} />
                   </a>
                 </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={toggleMenu}
-              className="p-2 text-slate-400 hover:text-white"
+              className="p-2 text-white/70 hover:text-accent"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -95,19 +95,23 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className="text-xs font-bold tracking-[0.2em] text-slate-400 hover:text-white"
+                className="text-xs font-bold tracking-[0.2em] text-white/70 hover:text-accent"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="w-full text-center px-6 py-3 bg-gradient-to-r from-brand-pink to-brand-purple text-white rounded-full text-xs font-black tracking-wider"
-              onClick={() => setIsOpen(false)}
-            >
-              Hire Me
-            </a>
+            <div className="flex gap-8 mt-4 pt-6 border-t border-white/5 w-full justify-center">
+              <a href="mailto:rashmishettykukkuje@gmail.com" className="text-white/70 hover:text-accent">
+                <Mail size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/rashmi-r-shetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://github.com/RashmiRShetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent">
+                <Github size={20} />
+              </a>
+            </div>
           </div>
         </div>
       )}

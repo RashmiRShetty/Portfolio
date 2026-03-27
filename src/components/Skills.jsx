@@ -1,32 +1,52 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Code2, Database, Smartphone, Wrench, Terminal, Layout } from 'lucide-react';
+import { 
+  Code2, Database, Smartphone, Wrench, Globe, Cpu, Server, ShieldCheck, 
+  Layout, FileCode, Braces, Layers, Palette, Terminal, Box, 
+  HardDrive, Table, Settings, SmartphoneIcon, FileJson, 
+  Calculator, Receipt, Github, CreditCard
+} from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
       title: 'Frontend Development',
-      icon: <Layout size={24} className="text-brand-pink" />,
-      skills: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'React.js', 'Tailwind CSS'],
-      color: 'border-brand-pink/20 bg-brand-pink/5',
+      skills: [
+        { name: 'HTML5', icon: 'logos/html-5' },
+        { name: 'CSS3', icon: 'vscode-icons/file-type-css' },
+        { name: 'JavaScript', icon: 'logos/javascript' },
+        { name: 'React.js', icon: 'logos/react' },
+        { name: 'Tailwind', icon: 'logos/tailwindcss-icon' }
+      ],
     },
     {
       title: 'Backend & Database',
-      icon: <Database size={24} className="text-brand-teal" />,
-      skills: ['PHP', 'Node.js', 'MySQL', 'SQL Server'],
-      color: 'border-brand-teal/20 bg-brand-teal/5',
+      skills: [
+        { name: 'PHP', icon: 'logos/php' },
+        { name: 'Node.js', icon: 'logos/nodejs-icon' },
+        { name: 'MySQL', icon: 'logos/mysql' },
+        { name: 'SQL Server', icon: 'vscode-icons/file-type-sql' },
+        { name: 'MongoDB', icon: 'logos/mongodb-icon' },
+        { name: 'Supabase', icon: 'logos/supabase-icon' }
+      ],
     },
     {
-      title: 'Mobile App Development',
-      icon: <Smartphone size={24} className="text-brand-purple" />,
-      skills: ['Android Studio', 'Java', 'XML'],
-      color: 'border-brand-purple/20 bg-brand-purple/5',
+      title: 'Mobile & Core',
+      skills: [
+        { name: 'Android', icon: 'logos/android-icon' },
+        { name: 'Java', icon: 'logos/java' },
+        { name: 'XML', icon: 'vscode-icons/file-type-xml' },
+        { name: 'Python', icon: 'logos/python' }
+      ],
     },
     {
-      title: 'Tools & Professional Skills',
-      icon: <Wrench size={24} className="text-blue-500" />,
-      skills: ['Tally ERP 9', 'GST Filing', 'Git / GitHub', 'Computerized Billing'],
-      color: 'border-blue-500/20 bg-blue-500/5',
+      title: 'Tools & Professional',
+      skills: [
+        { name: 'Git', icon: 'logos/git-icon' },
+        { name: 'GitHub', icon: 'logos/github-icon' },
+        { name: 'Postman', icon: 'logos/postman-icon' },
+        { name: 'VS Code', icon: 'logos/visual-studio-code' }
+      ],
     },
   ];
 
@@ -37,38 +57,41 @@ const Skills = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mb-8 text-center"
+          className="mb-12 text-center"
         >
-          <h2 className="text-3xl font-black text-white mb-4">
-            Technical <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-pink via-brand-purple to-blue-500">Mastery</span>
+          <h2 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter">
+            Technical <span >Stack</span>
           </h2>
-          <p className="text-slate-400 max-w-xl mx-auto font-medium leading-relaxed text-sm">
-            Leveraging a diverse set of tools and languages to architect robust digital solutions.
+          <p className="text-white/50 max-w-xl mx-auto font-medium text-sm">
+            Professional toolkit for building robust and scalable digital solutions.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className={`p-8 border rounded-[2rem] hover:border-white/20 transition-all group backdrop-blur-md ${category.color}`}
+              className="p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] hover:border-accent/20 transition-all group"
             >
-              <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                {category.icon}
-              </div>
-              <h3 className="text-lg font-black text-white mb-4">{category.title}</h3>
-              <div className="flex flex-wrap gap-2">
+              <h3 className="text-sm font-black text-white/40 mb-8 uppercase tracking-[0.2em]">{category.title}</h3>
+              <div className="grid grid-cols-2 gap-6">
                 {category.skills.map((skill, sIdx) => (
-                  <span
-                    key={sIdx}
-                    className="px-3 py-1.5 rounded-xl bg-white/5 border border-white/10 text-[10px] font-black tracking-wider text-slate-300 uppercase hover:bg-white/10 transition-colors"
-                  >
-                    {skill}
-                  </span>
+                  <div key={sIdx} className="flex flex-col items-center gap-3 group/skill">
+                    <div className="w-12 h-12 flex items-center justify-center transition-all duration-300 group-hover/skill:scale-110">
+                      <img 
+                        src={`https://api.iconify.design/${skill.icon}.svg`} 
+                        alt={skill.name}
+                        className={`w-8 h-8 object-contain ${skill.name === 'GitHub' ? 'invert brightness-200' : ''}`}
+                      />
+                    </div>
+                    <span className="text-[10px] font-bold text-white/50 group-hover/skill:text-white transition-colors uppercase tracking-widest text-center">
+                      {skill.name}
+                    </span>
+                  </div>
                 ))}
               </div>
             </motion.div>
