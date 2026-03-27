@@ -37,9 +37,9 @@ const Hero = () => {
             </motion.div>
             
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black mb-6 text-white tracking-tight leading-[1.05]">
-              MCA Student & <br />
-              <span className="text-brand-pink">Full Stack</span> <br />
-              <span className="text-blue-500">Developer.</span>
+             Aspiring <br />
+            <span className="text-brand-pink">Full Stack Developer</span> <br />
+            
             </h1>
             
             <p className="text-sm md:text-base text-slate-400 max-w-xl mb-10 leading-relaxed font-medium">
