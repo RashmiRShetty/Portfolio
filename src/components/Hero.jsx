@@ -62,8 +62,8 @@ Motivated and detail-oriented MCA student with a strong foundation in software d
               <motion.a
                 whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)" }}
                 whileTap={{ scale: 0.95 }}
-                href="/resume.pdf"
-                download="Rashmi_R_Shetty_Resume.pdf"
+                href="public/Rashmi R Shetty.pdf"
+                download="Rashmi R Shetty.pdf"
                 className="group flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-white/5 text-white border-2 border-accent/40 rounded-full font-black text-xs md:text-sm tracking-widest uppercase transition-all hover:bg-accent/10"
               >
                 Download Resume
