@@ -12,11 +12,11 @@ const Certifications = () => {
       logo: '/info.png'
     },
     {
-      title: 'Web Development Training',
+      title: 'PHP Web Development Training',
       issuer: 'Full-stack Proficiency',
       icon: 'W',
       color: 'text-white/40 bg-white/5',
-      logo: '/web.jpg'
+      logo: '/info.png'
     },
     {
       title: 'NPTEL Python Certification',
@@ -24,6 +24,13 @@ const Certifications = () => {
       icon: 'PY',
       color: 'text-white/40 bg-white/5',
       logo: '/np.jpeg'
+    },
+    {
+      title: 'Udemy Full Stack Web Development',
+      issuer: 'Full-stack Development Mastery',
+      icon: 'U',
+      color: 'text-white/40 bg-white/5',
+      logo: '/u.png'
     },
   ];
 
