@@ -37,7 +37,7 @@ const Projects = () => {
       description: 'Native mobile application facilitating real-time connections between donors and emergency recipients.',
       icon: <Droplets size={32} />,
       image: '/life.jpeg',
-      github: 'https://github.com/RashmiRShetty',
+      github: 'https://github.com/RashmiRShetty/lifelink.git',
       linkText: 'VIEW PROJECT',
     },
   ];
