@@ -4,6 +4,24 @@ import { Github, ExternalLink, Clapperboard, Droplets, Home, Layout } from 'luci
 
 const Projects = () => {
   const projects = [
+     {
+      title: 'House Rental Management',
+      label: 'REACT / NODE / SUPABASE',
+      description: 'Scalable property management dashboard featuring CRUD operations and modern state management.',
+      icon: <Home size={32} />,
+      image: '/elitenest.png',
+      github: 'https://elite-nest.vercel.app/',
+      linkText: 'LAUNCH DEMO',
+    },
+    {
+      title: 'Furniture Images Catalog',
+      label: 'REACT / SUPABASE / NODE',
+      description: 'A comprehensive catalog system for furniture products with real-time database integration.',
+      icon: <Layout size={32} />,
+      image: '/fur.jpeg',
+      github: 'https://sri-durga-images.vercel.app/',
+      linkText: 'VIEW PROJECT',
+    },
     {
       title: 'Movie Ticket Booking',
       label: 'PHP / MYSQL / JS',
@@ -20,24 +38,6 @@ const Projects = () => {
       icon: <Droplets size={32} />,
       image: '/life.jpeg',
       github: 'https://github.com/RashmiRShetty',
-      linkText: 'VIEW PROJECT',
-    },
-    {
-      title: 'House Rental Management',
-      label: 'REACT / NODE / SUPABASE',
-      description: 'Scalable property management dashboard featuring CRUD operations and modern state management.',
-      icon: <Home size={32} />,
-      image: '/elitenest.png',
-      github: 'https://elite-nest.vercel.app/',
-      linkText: 'LAUNCH DEMO',
-    },
-    {
-      title: 'Furniture Images Catalog',
-      label: 'REACT / SUPABASE / NODE',
-      description: 'A comprehensive catalog system for furniture products with real-time database integration.',
-      icon: <Layout size={32} />,
-      image: '/fur.jpeg',
-      github: 'https://sri-durga-images.vercel.app/',
       linkText: 'VIEW PROJECT',
     },
   ];
