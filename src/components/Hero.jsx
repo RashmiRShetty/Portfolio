@@ -115,7 +115,7 @@ Motivated and detail-oriented MCA student with a strong foundation in software d
               className="relative z-10 w-48 h-48 sm:w-64 sm:h-64 lg:w-96 lg:h-96 xl:w-[420px] xl:h-[420px]"
             >
               <img
-                src="/6.png"
+                src="/10.png"
                 alt="Rashmi R Shetty"
                 className="w-full h-full object-cover rounded-full drop-shadow-[0_0_50px_rgba(59,130,246,0.2)] border-4 border-white/10"
               />
