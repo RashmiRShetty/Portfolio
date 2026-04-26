@@ -21,7 +21,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { name: 'ABOUT', href: '#about' },
+    { name: 'ABOUT', href: '#hero' },
     { name: 'SKILLS', href: '#skills' },
     { name: 'ACADEMIC', href: '#education' },
     { name: 'EXPERIENCE', href: '#experience' },
