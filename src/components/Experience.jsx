@@ -8,6 +8,7 @@ const Experience = () => {
       role: 'Full Stack Developer Intern',
       company: 'Manipal Institute of Technology',
       period: 'May 2026 – Sep 2026',
+      image: '/developer-anime.png',
       description: 'Developed an Internship Lifecycle Management System using React.js, Spring Boot, microservices, and PostgreSQL.',
       tasks: [
         'Built REST APIs for internship management.',
@@ -55,8 +56,8 @@ const Experience = () => {
               viewport={{ once: true }}
               className="bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 relative overflow-hidden group hover:border-accent/20 transition-all"
             >
-              <div className="flex flex-col gap-6 mb-6">
-                <div>
+              <div className="flex items-start justify-between gap-4 mb-6">
+                <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
                     <p className="text-[10px] font-black tracking-[0.3em] text-white/30 uppercase">{exp.period}</p>
@@ -64,6 +65,13 @@ const Experience = () => {
                   <h3 className="text-2xl font-black text-white mb-2 group-hover:text-accent transition-colors uppercase tracking-tight">{exp.role}</h3>
                   <p className="text-xs font-black text-accent uppercase tracking-[0.2em]">{exp.company}</p>
                 </div>
+                {exp.image && (
+                  <img
+                    src={exp.image}
+                    alt="Developer working on a computer"
+                    className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-2xl object-cover border border-white/10"
+                  />
+                )}
               </div>
 
               <p className="text-sm text-white/60 font-medium mb-6 leading-relaxed italic">
