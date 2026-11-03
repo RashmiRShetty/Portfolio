@@ -22,8 +22,10 @@ const Skills = () => {
     {
       title: 'Backend & Database',
       skills: [
+        { name: 'Spring Boot', icon: 'logos/spring-icon' },
         { name: 'PHP', icon: 'logos/php' },
         { name: 'Node.js', icon: 'logos/nodejs-icon' },
+        { name: 'PostgreSQL', icon: 'logos/postgresql' },
         { name: 'MySQL', icon: 'logos/mysql' },
         { name: 'SQL Server', icon: 'vscode-icons/file-type-sql' },
         { name: 'MongoDB', icon: 'logos/mongodb-icon' },

@@ -7,9 +7,10 @@ const Education = () => {
     {
       degree: 'MCA',
       institution: 'Poornaprajna Institute of Management',
-      score: 'Pursuing',
-      status: 'Ongoing',
+      score: '2024 – 2026',
+      status: 'Completed',
       subtext: 'Mangalore University',
+      details: 'Semester CGPAs: 8.08 · 7.97 · 8.23',
       icon: <GraduationCap size={20} />,
       color: 'text-accent bg-accent/10',
       logo: '/pim.png'
@@ -20,6 +21,7 @@ const Education = () => {
       score: '2018 – 2021',
       status: 'Completed',
       subtext: 'Mangalore University',
+      details: 'Percentage: 68.29%',
       icon: <School size={20} />,
       color: 'text-white/40 bg-white/5',
       logo: '/bsc.jpg'
@@ -30,6 +32,7 @@ const Education = () => {
       score: '2017 – 2018',
       status: 'Completed',
       subtext: 'Karnataka Board',
+      details: 'Percentage: 69.17%',
       icon: <BookOpen size={20} />,
       color: 'text-white/40 bg-white/5',
       logo: '/k.webp'
@@ -40,6 +43,7 @@ const Education = () => {
       score: '2015 – 2016',
       status: 'Completed',
       subtext: 'Karnataka Board',
+      details: 'Percentage: 88.32%',
       icon: <Calendar size={20} />,
       color: 'text-white/40 bg-white/5',
       logo: '/k.webp'
@@ -63,7 +67,7 @@ const Education = () => {
           >
             <span className="text-[10px] font-black tracking-widest text-accent uppercase flex items-center gap-2">
               <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
-              Current Status: MCA Final Phase
+              MCA Completed: 2026
             </span>
           </motion.div>
         </div>
@@ -123,6 +127,11 @@ const Education = () => {
                   <div className="w-1 h-1 rounded-full bg-white/10"></div>
                   {edu.subtext}
                 </p>
+                {edu.details && (
+                  <p className="mt-2 text-[10px] font-bold text-white/50">
+                    {edu.details}
+                  </p>
+                )}
               </div>
 
             </motion.div>

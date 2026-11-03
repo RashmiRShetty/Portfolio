@@ -62,7 +62,7 @@ const Navbar = () => {
                   Hire Me
                 </a>
                 <div className="flex items-center gap-3 ml-2">
-                  <a href="mailto:rashmishettykukkuje@gmail.com" className="text-white/70 hover:text-accent transition-colors">
+                  <a href="mailto:rashmishetty1022@gmail.com" className="text-white/70 hover:text-accent transition-colors">
                     <Mail size={18} strokeWidth={2.5} />
                   </a>
                   <a href="https://www.linkedin.com/in/rashmi-r-shetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent transition-colors">
@@ -102,7 +102,7 @@ const Navbar = () => {
               </a>
             ))}
             <div className="flex gap-8 mt-4 pt-6 border-t border-white/5 w-full justify-center">
-              <a href="mailto:rashmishettykukkuje@gmail.com" className="text-white/70 hover:text-accent">
+              <a href="mailto:rashmishetty1022@gmail.com" className="text-white/70 hover:text-accent">
                 <Mail size={20} />
               </a>
               <a href="https://www.linkedin.com/in/rashmi-r-shetty" target="_blank" rel="noopener noreferrer" className="text-white/70 hover:text-accent">

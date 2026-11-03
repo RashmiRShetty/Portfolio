@@ -44,7 +44,7 @@ const Hero = () => {
             </h1>
 
             <p className="text-sm md:text-base text-white/70 max-w-xl mb-10 leading-relaxed font-medium">
-Motivated and detail-oriented MCA student with a strong foundation in software development, web technologies, and problem-solving. Passionate about building user-friendly applications and continuously learning new technologies. Seeking opportunities to apply my skills in real-world projects and contribute effectively to organizational growth.            </p>
+Motivated and detail-oriented MCA graduate with a strong foundation in software development, web technologies, and problem-solving. Passionate about building user-friendly applications and continuously learning new technologies. Seeking opportunities to apply my skills in real-world projects and contribute effectively to organizational growth.            </p>
 
             <div className="flex flex-wrap items-center gap-4">
               {/* View Projects Button */}
@@ -62,8 +62,8 @@ Motivated and detail-oriented MCA student with a strong foundation in software d
               <motion.a
                 whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(59, 130, 246, 0.2)" }}
                 whileTap={{ scale: 0.95 }}
-                href="public/Rashmi R Shetty.pdf"
-                download="Rashmi R Shetty.pdf"
+                href="public/Rashmi R Shetty_.pdf"
+                download="Rashmi R Shetty_.pdf"
                 className="group flex items-center gap-2 px-6 py-3 md:px-8 md:py-4 bg-white/5 text-white border-2 border-accent/40 rounded-full font-black text-xs md:text-sm tracking-widest uppercase transition-all hover:bg-accent/10"
               >
                 Download Resume

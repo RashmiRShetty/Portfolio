@@ -1,9 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Briefcase, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
+    {
+      role: 'Full Stack Developer Intern',
+      company: 'Manipal Institute of Technology',
+      period: 'May 2026 – Sep 2026',
+      description: 'Developed an Internship Lifecycle Management System using React.js, Spring Boot, microservices, and PostgreSQL.',
+      tasks: [
+        'Built REST APIs for internship management.',
+        'Developed scheduling and tracking features.',
+        'Worked with a microservices architecture and PostgreSQL.',
+        'Implemented certificate generation.',
+      ],
+    },
     {
       role: 'Accountant & Inside Sales',
       company: 'Sri Durga Electronics and Furniture',
@@ -34,16 +46,16 @@ const Experience = () => {
           </h2>
         </motion.div>
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
           {experiences.map((exp, idx) => (
             <motion.div
               key={idx}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 md:p-12 relative overflow-hidden group hover:border-accent/20 transition-all"
+              className="bg-white/[0.02] border border-white/5 rounded-[2.5rem] p-8 relative overflow-hidden group hover:border-accent/20 transition-all"
             >
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+              <div className="flex flex-col gap-6 mb-6">
                 <div>
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
@@ -54,11 +66,11 @@ const Experience = () => {
                 </div>
               </div>
 
-              <p className="text-sm text-white/60 font-medium mb-10 max-w-2xl leading-relaxed italic">
+              <p className="text-sm text-white/60 font-medium mb-6 leading-relaxed italic">
                 "{exp.description}"
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 gap-4">
                 {exp.tasks.map((task, tIdx) => (
                   <div key={tIdx} className="flex items-start gap-4 text-white/50 group/task">
                     <CheckCircle2 size={16} className="text-accent shrink-0 mt-0.5 opacity-40 group-hover/task:opacity-100 transition-opacity" />
