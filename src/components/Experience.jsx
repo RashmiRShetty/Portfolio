@@ -69,7 +69,7 @@ const Experience = () => {
                   <img
                     src={exp.image}
                     alt="Developer working on a computer"
-                    className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-2xl object-cover border border-white/10"
+                    className="w-24 h-24 sm:w-28 sm:h-28 shrink-0 rounded-full object-cover border border-white/10"
                   />
                 )}
               </div>
