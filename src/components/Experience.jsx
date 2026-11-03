@@ -42,7 +42,7 @@ const Experience = () => {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h2 className="text-3xl font-black text-white flex items-center gap-3 uppercase tracking-tighter">
+          <h2 className="text-2xl font-black text-white flex items-center gap-3 uppercase tracking-tighter">
             Professional <span >Experience</span>
           </h2>
         </motion.div>
@@ -60,10 +60,10 @@ const Experience = () => {
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse"></div>
-                    <p className="text-[10px] font-black tracking-[0.3em] text-white/30 uppercase">{exp.period}</p>
+                    <p className="text-xs font-black tracking-[0.3em] text-white/30 uppercase">{exp.period}</p>
                   </div>
-                  <h3 className="text-2xl font-black text-white mb-2 group-hover:text-accent transition-colors uppercase tracking-tight">{exp.role}</h3>
-                  <p className="text-xs font-black text-accent uppercase tracking-[0.2em]">{exp.company}</p>
+                  <h3 className="text-xl font-black text-white mb-2 group-hover:text-accent transition-colors uppercase tracking-tight">{exp.role}</h3>
+                  <p className="text-sm font-black text-accent uppercase tracking-[0.2em]">{exp.company}</p>
                 </div>
                 {exp.image && (
                   <img
@@ -74,7 +74,7 @@ const Experience = () => {
                 )}
               </div>
 
-              <p className="text-sm text-white/60 font-medium mb-6 leading-relaxed italic">
+              <p className="text-base text-white/60 font-medium mb-6 leading-relaxed italic">
                 "{exp.description}"
               </p>
 
@@ -82,7 +82,7 @@ const Experience = () => {
                 {exp.tasks.map((task, tIdx) => (
                   <div key={tIdx} className="flex items-start gap-4 text-white/50 group/task">
                     <CheckCircle2 size={16} className="text-accent shrink-0 mt-0.5 opacity-40 group-hover/task:opacity-100 transition-opacity" />
-                    <span className="text-xs font-medium leading-relaxed group-hover/task:text-white transition-colors">{task}</span>
+                    <span className="text-sm font-medium leading-relaxed group-hover/task:text-white transition-colors">{task}</span>
                   </div>
                 ))}
               </div>
